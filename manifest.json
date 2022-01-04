@@ -1,0 +1,46 @@
+{
+  "manifest_version": 2,
+  "name": "Name",
+  "description": "description",
+  "version": "0.0.1",
+  "icons": {"128": "./media/iconsDefault.png"},
+  "background": {
+    "persistent": true,
+    "scripts": ["bg.js"]
+  },
+  "browser_action": {
+    "default_icon": "./media/iconsDefault.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "index.js"
+      ],
+      "matches": [
+        "*://www.example.com/*"
+      ]
+    }, {
+      "js": [
+        "index.js"
+      ],
+      "matches": [
+        "*://www.example.com/*"
+      ]
+    }, {
+      "js": [
+        "index.js"
+      ],
+      "matches": [
+        "*://www.example.com/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "*://www.example.com/*",
+    "cookies",
+    "tabs",
+    "activeTab",
+    "storage",
+    "notifications"
+  ]
+}
