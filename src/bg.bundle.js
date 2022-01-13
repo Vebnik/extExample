@@ -1,0 +1,1 @@
+chrome.runtime.onMessage.addListener((function(e,a,n){if("2ndMetrics"===e.name)return console.log(e.dataBg),n({data:e.dataBg}),!0}));

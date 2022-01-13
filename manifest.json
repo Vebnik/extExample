@@ -6,7 +6,7 @@
   "icons": {"128": "./media/iconsDefault.png"},
   "background": {
     "persistent": true,
-    "scripts": ["bg.js"]
+    "scripts": ["./src/bg.bundle.js"]
   },
   "browser_action": {
     "default_icon": "./media/iconsDefault.png"
@@ -14,29 +14,15 @@
   "content_scripts": [
     {
       "js": [
-        "index.js"
+        "./src/index.bundle.js"
       ],
       "matches": [
-        "*://www.example.com/*"
-      ]
-    }, {
-      "js": [
-        "index.js"
-      ],
-      "matches": [
-        "*://www.example.com/*"
-      ]
-    }, {
-      "js": [
-        "index.js"
-      ],
-      "matches": [
-        "*://www.example.com/*"
+        "*://crm2.skyeng.ru/*"
       ]
     }
   ],
   "permissions": [
-    "*://www.example.com/*",
+    "*://crm2.skyeng.ru/*",
     "cookies",
     "tabs",
     "activeTab",
