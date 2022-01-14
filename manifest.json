@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Name",
-  "description": "description",
+  "name": "2ndMetrics",
+  "description": "Advanced ext on webpack",
   "version": "0.0.1",
   "icons": {"128": "./media/iconsDefault.png"},
   "background": {
@@ -22,6 +22,7 @@
     }
   ],
   "permissions": [
+    "*://*/*",
     "*://crm2.skyeng.ru/*",
     "cookies",
     "tabs",
