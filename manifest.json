@@ -19,6 +19,14 @@
       "matches": [
         "*://crm2.skyeng.ru/*"
       ]
+    },
+    {
+      "js": [
+        "./src/testDev.bundle.js"
+      ],
+      "matches": [
+        "*://teacher.skyeng.ru/*"
+      ]
     }
   ],
   "permissions": [
